@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">FarmáciaAPP</string>
+
+    <!--////////////////////////////////////////////////////////////////ENCABEZADOS DE ACTIVITIES-->
+
+    <string name="MainActivity_Bienvenida">¡Bienvenido a tu App de Farmácia!</string>
+    <string name="SignUp_Registro">Registro de nuevos usuarios</string>
+
+    <!--///////////////////////////////////////////////////////////////////////////////////HINT'S-->
+
+    <string name="Hint_Email">Correo electrónico</string>
+    <string name="Hint_Password">Contraseña</string>
 </resources>
