@@ -32,7 +32,7 @@ public class SignUp extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         progressBar = findViewById(R.id.progressBar);
-        buttonSave = findViewById(R.id.buttonSave);
+        buttonSave = findViewById(R.id.btnLogin);
 
     }
 
@@ -42,9 +42,9 @@ public class SignUp extends AppCompatActivity {
         buttonSave.setEnabled(false);
 
         String mail, password;
-        editText = findViewById(R.id.editTextMail);
+        editText = findViewById(R.id.email);
         mail = editText.getText().toString();
-        editText = findViewById(R.id.editTextPassword);
+        editText = findViewById(R.id.password);
         password = editText.getText().toString();
 
         if(TextUtils.isEmpty(mail) || TextUtils.isEmpty(password)){
