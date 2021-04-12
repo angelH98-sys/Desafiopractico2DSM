@@ -8,6 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="principal_orange">#FF784D</color>
+    <color name="second_orange">#FF5722</color>
+
     <!-- Edit your theme color here -->
     <color name="colorPrimary">#D81B60</color>
     <color name="colorPrimaryDark">#BB1658</color>
