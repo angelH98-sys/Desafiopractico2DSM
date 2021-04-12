@@ -14,10 +14,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//      prueba de actividad de carro
-//        Intent carro = new Intent(this, carro.class);
-//        startActivity(carro);
-//        Fin de prueba
     }
 
     public void toSignUpActivity(View v){

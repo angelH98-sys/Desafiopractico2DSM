@@ -44,7 +44,7 @@ public class carro extends AppCompatActivity {
         master = findViewById((R.id.master));
 
         db.collection("carrito")
-        .document("javier")
+        .document("jose")
         .get()
         .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
@@ -104,7 +104,7 @@ public class carro extends AppCompatActivity {
                             Map data = doc.getData();
                             Log.d("get-Firebase", "datos : " + data.get("imgUrl"));//medicamentos.add(doc.getData());
 
-                            Picasso.get().load((String) data.get("imgUrl")).resize(100,100).into(medImg);
+                            Picasso.get().load((String) data.get("imgUrl")).resize(300,300).into(medImg);
                             newTxtView(lineVert1,"Medicamento: " + data.get("nombre"));
                             newTxtView(lineVert1,"Precio Unidad: " + data.get("precio"));
                             newTxtView(lineVert1,"Laboratorio: " + data.get("laboratorio"));
