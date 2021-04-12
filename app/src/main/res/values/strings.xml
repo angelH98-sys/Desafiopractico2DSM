@@ -5,6 +5,8 @@
 
     <string name="MainActivity_Bienvenida">¡Bienvenido a tu App de Farmácia!</string>
     <string name="SignUp_Registro">Registro de nuevos usuarios</string>
+    <string name="MainActivity_Login">Inicio de sesión</string>
+    <string name="MainActivity_Registrate">Si no estas registrado...</string>
 
     <!--///////////////////////////////////////////////////////////////////////////////////HINT'S-->
 

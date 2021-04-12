@@ -4,48 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical"
     android:orientation="vertical"
-    tools:context=".SignUp">
+    android:padding="16dp"
+    tools:context=".LoginActivity">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30sp"
-        android:gravity="center_horizontal"
-        android:text="@string/SignUp_Registro"
-        android:textColor="#000000"
-        android:textSize="30sp" />
-
+        android:text="Account login"/>
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20sp"
-        android:ems="10"
-        android:hint="@string/Hint_Email"
-        android:inputType="textPersonName" />
+        android:hint="Email" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10sp"
-        android:ems="10"
-        android:hint="@string/Hint_Password"
+        android:hint="Password"
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20sp"
-        android:onClick="signUpNewUser"
-        android:paddingTop="10sp"
-        android:paddingBottom="10sp"
-        android:text="Registrar"
-        android:textSize="20sp"
-        app:backgroundTint="#FF5722" />
+        android:text="Login" />
 
     <ProgressBar
         android:id="@+id/progressBar"

@@ -16,8 +16,9 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     private EditText emailTV, passwordTV;
     private Button loginBtn;
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -40,11 +41,6 @@ public class MainActivity extends AppCompatActivity {
                 loginUserAccount();
             }
         });
-    }
-
-    public void toSignUpActivity(View v){
-        Intent intent = new Intent(this, SignUp.class);
-        startActivity(intent);
     }
 
     private void loginUserAccount() {
@@ -67,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             progressBar.setVisibility(View.GONE);
 
-                            Intent intent = new Intent(MainActivity.this, Principal.class);
+                            Intent intent = new Intent(LoginActivity.this, Principal.class);
                             startActivity(intent);
                         }
                         else {
@@ -79,10 +75,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initializeUI() {
-        emailTV = findViewById(R.id.editTextMail);
-        passwordTV = findViewById(R.id.editTextPassword);
+        emailTV = findViewById(R.id.email);
+        passwordTV = findViewById(R.id.password);
 
-        loginBtn = findViewById(R.id.buttonSignIn);
+        loginBtn = findViewById(R.id.login);
         progressBar = findViewById(R.id.progressBar);
     }
+
 }
